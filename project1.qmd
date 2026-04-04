@@ -1,18 +1,20 @@
 ---
 title: "Project Checkpoint 1"
-author: "Franchesca Garcia"
-format: html
+format: 
+  html:
+      embed-resources: true
 editor: visual
-messages: false
 ---
 
 ```{r steup}
 #| echo: false
+#| message: false
 
 library(tidyverse)
 ```
 
 ```{r load in data}
+#| message: false
 
 democracy_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2024/2024-11-05/democracy_data.csv')
 
@@ -22,7 +24,7 @@ democracy_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatasci
 
 This dataset is based on the PACL dataset from J. A. Cheibub, J. Gandhi, and J. R. Vreeland. "Democracy and Dictatorship Revisited". In: Public Choice 143.1-2 (2009), pp. 67-101. DOI: 10.1007/s11127-009-9491-2.
 
-Each row represents a country and year. The columns describe the political system and leader of the country during the year. Regarding the system, the columns include it's specific regime category as defined by Cheibub, Ghandi and Vreeland (2010), additional indicator variables of certain more general systems, and details of the election process as applicable. Regarding the leader, the columns include details such as their name, birth year, and gender, as well as details about their term as applicable.
+Each row represents a country and year. The columns describe the political system and leader of the country during the year. Regarding the system, the columns include it's specific regime category as defined by Cheibub, Ghandi and Vreeland (2010), additional indicator variables of certain, more general systems, and details of the election process as applicable. Regarding the leader, the columns include details such as their name, birth year, and gender, as well as details about their term as applicable.
 
 ## Data Cleaning
 
